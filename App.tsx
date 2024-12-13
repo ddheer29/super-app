@@ -3,11 +3,12 @@ import React, { useCallback } from 'react';
 import AnimatedSearchBar from './src/AnimatedSearchBar';
 import SwipeAnimation from './src/SwipeAnimation';
 import AnimatedSlider from './src/AnimatedSlider';
+import Navigation from './src/Navigation/Navigation';
 
 
 const App = () => {
   return (
-    <AnimatedSlider />
+    <Navigation />
   );
 };
 
