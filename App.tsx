@@ -1,11 +1,13 @@
 import { Dimensions, Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
 import React, { useCallback } from 'react';
 import AnimatedSearchBar from './src/AnimatedSearchBar';
+import SwipeAnimation from './src/SwipeAnimation';
+import AnimatedSlider from './src/AnimatedSlider';
 
 
 const App = () => {
   return (
-    <AnimatedSearchBar />
+    <AnimatedSlider />
   );
 };
 
