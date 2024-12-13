@@ -6,6 +6,7 @@ import GestureFirst from '../GestureFirst';
 import AnimatedSearchBar from '../AnimatedSearchBar';
 import SwipeAnimation from '../SwipeAnimation';
 import HomeScreen from '../Screen/HomeScreen';
+import AnimatedSwitch from '../Animation/AnimatedSwitch';
 
 const Drawer = createDrawerNavigator();
 const DrawerNavigator = () => {
@@ -17,6 +18,7 @@ const DrawerNavigator = () => {
       <Drawer.Screen name="AnimatedSearchBar" component={AnimatedSearchBar} />
       {/* <Drawer.Screen name="SliderItem" component={SliderItem} /> */}
       <Drawer.Screen name="SwipeAnimation" component={SwipeAnimation} />
+      <Drawer.Screen name="AnimatedSwitch" component={AnimatedSwitch} />
 
     </Drawer.Navigator>
   )
