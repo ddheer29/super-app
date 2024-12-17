@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "999543034035",
+    "project_id": "superapp-a06e7",
+    "storage_bucket": "superapp-a06e7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999543034035:android:9e500b5dab0002759ca0c6",
+        "android_client_info": {
+          "package_name": "com.reanimated"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhn9pDu6o2U_EqjtwXxRXAx_RZIym4VS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
