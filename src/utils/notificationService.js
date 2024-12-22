@@ -11,16 +11,16 @@ export async function requestUserPermission() {
     } else {
       console.log('Permission denied');
     }
-  }
+  } else {
+    const authStatus = await messaging().requestPermission();
+    const enabled =
+      authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
+      authStatus === messaging.AuthorizationStatus.PROVISIONAL;
 
-  const authStatus = await messaging().requestPermission();
-  const enabled =
-    authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
-    authStatus === messaging.AuthorizationStatus.PROVISIONAL;
-
-  if (enabled) {
-    console.log('Authorization status:', authStatus);
-    getFCMToken();
+    if (enabled) {
+      console.log('Authorization status:', authStatus);
+      getFCMToken();
+    }
   }
 }
 
