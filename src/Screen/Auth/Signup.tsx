@@ -10,6 +10,7 @@ const Signup = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isPrivate, setIsPrivate] = useState(true);
 
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', borderRightColor: colors.white }}>
@@ -130,6 +131,7 @@ const Signup = () => {
               alignSelf: 'flex-end',
               marginTop: 16
             }}
+            onPress={() => navigation.navigate('OtpScreen')}
           >
             <Text
               style={{
